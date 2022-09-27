@@ -39,14 +39,31 @@ function highestCount() {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {  
+
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numbers) {
+    let resultado = ''
+    let strings = [];
+
+  for(let index = 0; index < numbers.length; index += 1){
+    if(numbers[index] % 3 === 0 && numbers[index] % 5 === 0){
+      resultado = 'fizzBuzz'
+    } else if (numbers[index] % 3 === 0){
+      resultado = 'fizz'
+    } else if (numbers[index] % 5 === 0){
+      resultado = 'buzz'
+    } else {
+      resultado = 'bug!'
+    }
+    strings.push(resultado);
+  }
+  return strings;
 }
+
+console.log(fizzBuzz([2, 15, 7, 9, 45]))
 
 // Desafio 9
 function encode() {
