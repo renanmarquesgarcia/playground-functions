@@ -13,14 +13,14 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  
+function splitSentence(string) {
+  let stringsSeparation = string.split(' ');
+  return stringsSeparation;
 }
 
 // Desafio 4
 function concatName(names) {
-  let lastAndFirstNames = "'" + names.lenght - 1 + ', ' + names[0] + "'"
-  return lastAndFirstNames
+  return  names[names.length - 1] + ', ' + names[0];
 }
 
 
@@ -63,19 +63,19 @@ function fizzBuzz(numbers) {
   return strings;
 }
 
-console.log(fizzBuzz([2, 15, 7, 9, 45]))
-
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(string) {
+  
 }
+
+
 function decode() {
   // seu código aqui
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tech, name) {
+  
 }
 
 module.exports = {
