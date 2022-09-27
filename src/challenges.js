@@ -14,17 +14,23 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence() {
-  // seu código aqui
+  
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(names) {
+  let lastAndFirstNames = "'" + names.lenght - 1 + ', ' + names[0] + "'"
+  return lastAndFirstNames
 }
 
+
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let winsPoints = wins * 3;
+  let tiesPoints = ties * 1;
+  let totalPoints = winsPoints + tiesPoints;
+
+  return totalPoints;  
 }
 
 // Desafio 6
