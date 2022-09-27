@@ -34,9 +34,25 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
-  // seu código aqui
+function highestCount(numbers) {
+  let biggestNumber;
+  let biggestNumberApearrance = 0;
+
+  for (let index = 0; index < numbers.length; index += 1){
+    for(let index2 = 1; index2 < numbers.length; index2 += 1){
+    if(numbers[index] > numbers[index2]){
+      biggestNumber = numbers[index];
+    }
+  }
 }
+  for(index = 0; index < numbers.length; index += 1){
+    if (biggestNumber === numbers[index]){
+      biggestNumberApearrance +=1
+    }
+  }
+  return biggestNumberApearrance;
+}
+
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {  
@@ -65,12 +81,44 @@ function fizzBuzz(numbers) {
 
 // Desafio 9
 function encode(string) {
-  
+  let newString = '';
+    for (let index = 0; index < string.length; index = index + 1) {
+      if (string[index] === 'a') {
+        newString += '1';
+      } else if (string[index] === 'e') {
+        newString += '2'
+      } else if (string[index] === 'i') {
+        newString += '3'
+      } else if (string[index] === 'o') {
+        newString += '4'
+      } else if (string[index] === 'u') {
+        newString += '5'
+      } else {
+        newString += string[index];
+      }
+    }
+    return newString;
 }
 
+function decode(string) {
+  let newStringDecode = '';
 
-function decode() {
-  // seu código aqui
+    for (let index = 0; index < string.length; index = index + 1) {
+      if (string[index] === '1') {
+        newStringDecode += 'a';
+      } else if (string[index] === '2') {
+        newStringDecode += 'e'
+      } else if (string[index] === '3') {
+        newStringDecode += 'i'
+      } else if (string[index] === '4') {
+        newStringDecode += 'o'
+      } else if (string[index] === '5') {
+        newStringDecode += 'u'
+      } else {
+        newStringDecode += string[index];
+      }
+    }
+return newStringDecode;
 }
 
 // Desafio 10
