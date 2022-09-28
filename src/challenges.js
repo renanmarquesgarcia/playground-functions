@@ -35,22 +35,19 @@ function footballPoints(wins, ties) {
 
 // Desafio 6
 function highestCount(numbers) {
-    
   let count = 1
-  let lastPosition = numbers[0]
-
+  let position = numbers[0]
   
   for (let index = 1; index < numbers.length; index += 1){
-      if (numbers[index] > lastPosition){
-          lastPosition = numbers[index]
+      if (numbers[index] > position){
+          position = numbers[index]
           count = 1
-      } else if (numbers[index] === lastPosition){
+      } else if (numbers[index] === position){
           count += 1
       }
   }
   return count;
 }
-
 
 
 // Desafio 7
@@ -132,7 +129,9 @@ return newStringDecode;
 
 // Desafio 10
 function techList(tech, name) {
-  
+  // if
+  // sort
+  // for
 }
 
 console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
