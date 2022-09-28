@@ -23,7 +23,6 @@ function concatName(names) {
   return  names[names.length - 1] + ', ' + names[0];
 }
 
-
 // Desafio 5
 function footballPoints(wins, ties) {
   let winsPoints = wins * 3;
@@ -48,7 +47,6 @@ function highestCount(numbers) {
   }
   return count;
 }
-
 
 // Desafio 7
 function catAndMouse(mouse, cat1, cat2) {  
@@ -129,12 +127,22 @@ return newStringDecode;
 
 // Desafio 10
 function techList(tech, name) {
-  // if
-  // sort
-  // for
-}
+  
+  if (tech.length === 0){
+    return 'Vazio!';
+  } 
 
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+  let techNameArray = [];
+  let technologies = tech.sort();
+  
+  for (let index = 0; index < tech.length; index += 1) {
+    techNameArray.push({
+      tech: technologies[index],
+      name: name,
+    });
+  }  
+  return techNameArray;
+  }
 
 module.exports = {
   calcArea,
