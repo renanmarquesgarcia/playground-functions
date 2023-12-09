@@ -1,6 +1,6 @@
 # Repositório do projeto Zoo Functions! 
 
-  Nesse projeto dou meus primeiros passos em JavaScript e lógica de programação. Para isso, resolvo alguns desafios através de conhecimentos básicos sobre váriaveis, tipos de dados, array, objetos, estruturas de repetição e estruturas condicionais. 
+  Nesse projeto dou meus primeiros passos em JavaScript e lógica de programação. Para isso, resolvo alguns desafios através de conhecimentos básicos sobre variáveis, tipos de dados, array, objetos, estruturas de repetição e estruturas condicionais. 
 
 # Orientações
 
